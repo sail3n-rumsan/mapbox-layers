@@ -1,11 +1,14 @@
 import POINT from "./point";
 import LINE from "./line";
+import FILL from "./fill";
+import LABEL from "./label";
 
 export default {
   pointData: POINT.pointData,
   pointStyle: POINT.pointStyle,
-  labelData: POINT.labelData,
-  labelStyle: POINT.labelStyle,
+  labelStyle: LABEL.labelStyle,
   lineData: LINE.lineData,
   lineStyle: LINE.lineStyle,
+  fillData: FILL.fillData,
+  fillStyle: FILL.fillStyle,
 };

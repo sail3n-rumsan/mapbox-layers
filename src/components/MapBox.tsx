@@ -11,6 +11,8 @@ function MapBox() {
       <Map
         mapboxAccessToken={MAPBOX_TOKEN}
         initialViewState={{
+          longitude: 85.324,
+          latitude: 27.7172,
           zoom: 2,
         }}
         mapStyle={`mapbox://${MAP_STYLE}`}
@@ -18,14 +20,17 @@ function MapBox() {
       >
         <Source id="my-data" type="geojson" data={LAYERS.pointData}>
           <Layer {...LAYERS.pointStyle} />
-        </Source>
-
-        <Source id="label-source" type="geojson" data={LAYERS.labelData}>
           <Layer {...LAYERS.labelStyle} />
         </Source>
 
         <Source id="line-source" type="geojson" data={LAYERS.lineData}>
           <Layer {...LAYERS.lineStyle} />
+          <Layer {...LAYERS.labelStyle} />
+        </Source>
+
+        <Source id="fill-source" type="geojson" data={LAYERS.fillData}>
+          <Layer {...LAYERS.fillStyle} />
+          <Layer {...LAYERS.labelStyle} />
         </Source>
       </Map>
     </div>

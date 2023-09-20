@@ -10,6 +10,9 @@ const lineData = {
       [85.31347032854391, 27.699888597402563],
     ],
   },
+  properties: {
+    title: "Tundikhel Ground",
+  },
 };
 
 const lineStyle = {

@@ -3,7 +3,7 @@ const labelStyle = {
   layout: {
     "text-field": ["get", "title"],
     "text-anchor": "top",
-    "text-offset": [0, 0],
+    "text-offset": [0, -1],
   },
   paint: {
     "text-color": "yellow", // Label text color

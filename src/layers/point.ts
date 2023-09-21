@@ -5,7 +5,7 @@ const pointData = {
       type: "Feature",
       geometry: {
         type: "Point",
-        coordinates: [85.31235303305883, 27.700523848586915],
+        coordinates: [85.31191543749941, 27.700608139657284],
       },
       properties: {
         title: "Dharahara", // Label text
